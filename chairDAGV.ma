@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: chairDAGV.ma
-//Last modified: Tue, Aug 29, 2023 08:48:25 PM
+//Last modified: Tue, Aug 29, 2023 08:59:09 PM
 //Codeset: UTF-8
 requires maya "2023";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
@@ -10,23 +10,23 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "9C777017-5347-E0A7-F62E-99B60073F1FF";
+fileInfo "UUID" "4E4A76CE-2B4A-613E-BDF9-F095CC2C3527";
 createNode transform -s -n "persp";
 	rename -uid "41C22269-0E44-E6F6-30CF-79A31D08348D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 36.197566808871905 25.340708087703472 -54.557709713491739 ;
-	setAttr ".r" -type "double3" 157.72328556219239 34.575472527930771 180 ;
-	setAttr ".rp" -type "double3" -5.8286708792820718e-16 4.4408920985006262e-16 1.4210854715202004e-14 ;
-	setAttr ".rpt" -type "double3" 1.0247521384037524e-14 1.9837355557149689e-15 -2.4225118790846459e-14 ;
+	setAttr ".t" -type "double3" 45.587867040770114 44.178916411842593 -78.132845744450677 ;
+	setAttr ".r" -type "double3" 153.19397492874714 30.988882261071161 180 ;
+	setAttr ".rp" -type "double3" -2.6645352591003757e-15 -2.6645352591003757e-15 0 ;
+	setAttr ".rpt" -type "double3" 1.0966425866453954e-14 -3.3012284213210911e-16 -8.8452371149791763e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1E6044AD-D64A-A29A-6476-148528C60F8F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 67.046503341746828;
+	setAttr ".coi" 97.454360584248732;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.98903711112497206 -0.075288040495919972 -3.4732679754332167 ;
+	setAttr ".tp" -type "double3" 0.8034174233851914 0.22978696954011113 -3.5662346466123012 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "F30868E2-8F4E-A9F6-108B-88AF6B5D43B2";
