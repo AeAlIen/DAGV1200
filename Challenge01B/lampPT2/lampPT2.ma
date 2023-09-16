@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: lampPT2.ma
-//Last modified: Fri, Sep 08, 2023 11:27:06 PM
+//Last modified: Fri, Sep 15, 2023 07:48:28 PM
 //Codeset: UTF-8
 requires maya "2023";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
@@ -10,23 +10,23 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "E627B1BA-4D43-01BE-4446-86B78BD678E1";
+fileInfo "UUID" "DD92CDB9-224C-EAB6-E63B-1C8A5782F030";
 createNode transform -s -n "persp";
 	rename -uid "5FAE9A56-C240-E78E-4F9D-3AB0F642731A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -55.412852339185605 64.921504906583536 52.01401497875365 ;
-	setAttr ".r" -type "double3" 156.35646385767143 231.34589953458641 -179.99999999999983 ;
-	setAttr ".rp" -type "double3" 3.5527136788005009e-15 -7.1054273576010019e-15 0 ;
-	setAttr ".rpt" -type "double3" -4.0657078993655289e-14 -2.6787134233700725e-14 -6.4223600446397995e-14 ;
+	setAttr ".t" -type "double3" 3.9017288016275717 43.687193780213981 33.362996992080326 ;
+	setAttr ".r" -type "double3" -28.470423732586738 6.6703155409546815 1.2168476666067321e-13 ;
+	setAttr ".rp" -type "double3" 6.6174449004242214e-24 1.0658141036401503e-14 7.1054273576010019e-15 ;
+	setAttr ".rpt" -type "double3" -3.6080063589899183e-14 -1.0746897746644676e-14 -7.3409659606933416e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1F4CB670-0949-6A93-BB3E-D2AF267524A8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 95.070713665991263;
+	setAttr ".coi" 38.211555136882495;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 3.5623872547814344 40.541938641564059 -2.7982491152211821 ;
+	setAttr ".tp" -type "double3" -5.6154910321737361e-07 25.471552536969568 -4.4923927760009974e-06 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "BA2D8A6B-6740-3E1E-4907-C3BA42B12A02";
